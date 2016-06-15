@@ -7,6 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "LEETheme.h"
+
+#define RED @"red"
+
+#define BLUE @"blue"
+
+#define GRAY @"gray"
+
+#define GREEN @"green"
 
 @interface AppDelegate ()
 
@@ -14,9 +23,42 @@
 
 @implementation AppDelegate
 
+- (NSString *)documentPath{
+    
+    NSArray *array = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+    return array.firstObject;
+    
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *json = [NSString stringWithContentsOfFile:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"tag_red_json.json"] encoding:NSUTF8StringEncoding error:nil];
+    
+    [LEETheme addThemeConfigJson:json WithTag:RED WithResourcesPath:nil];
+    
+    NSString *json2 = [NSString stringWithContentsOfFile:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"tag_blue_json.json"] encoding:NSUTF8StringEncoding error:nil];
+    
+    [LEETheme addThemeConfigJson:json2 WithTag:BLUE WithResourcesPath:nil];
+    
+    NSString *json3 = [NSString stringWithContentsOfFile:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"tag_gray_json.json"] encoding:NSUTF8StringEncoding error:nil];
+    
+    [LEETheme addThemeConfigJson:json3 WithTag:GRAY WithResourcesPath:nil];
+    
+    //延迟5秒添加主题 , 模拟动态添加主题功能
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        NSString *json4 = [NSString stringWithContentsOfFile:[[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:@"tag_green_json.json"] encoding:NSUTF8StringEncoding error:nil];
+        
+        [LEETheme addThemeConfigJson:json4 WithTag:GREEN WithResourcesPath:[self documentPath]];
+        
+    });
+    
+    //设置默认主题
+    
+    [LEETheme defaultTheme:RED];
+    
     return YES;
 }
 

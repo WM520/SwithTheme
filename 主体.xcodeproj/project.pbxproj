@@ -15,6 +15,12 @@
 		93B9F9801D10ECA800CE1504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93B9F97E1D10ECA800CE1504 /* LaunchScreen.storyboard */; };
 		93B9F98B1D10ECA800CE1504 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B9F98A1D10ECA800CE1504 /* __Tests.m */; };
 		93B9F9961D10ECA800CE1504 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B9F9951D10ECA800CE1504 /* __UITests.m */; };
+		93B9F9A61D10ECC400CE1504 /* LEETheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B9F9A51D10ECC400CE1504 /* LEETheme.m */; };
+		93B9F9AB1D10ED0000CE1504 /* tag_blue_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B9F9A71D10ED0000CE1504 /* tag_blue_json.json */; };
+		93B9F9AC1D10ED0000CE1504 /* tag_gray_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B9F9A81D10ED0000CE1504 /* tag_gray_json.json */; };
+		93B9F9AD1D10ED0000CE1504 /* tag_green_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B9F9A91D10ED0000CE1504 /* tag_green_json.json */; };
+		93B9F9AE1D10ED0000CE1504 /* tag_red_json.json in Resources */ = {isa = PBXBuildFile; fileRef = 93B9F9AA1D10ED0000CE1504 /* tag_red_json.json */; };
+		93B9F9B11D10F0D800CE1504 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B9F9B01D10F0D800CE1504 /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,14 @@
 		93B9F9911D10ECA800CE1504 /* 主体UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "主体UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B9F9951D10ECA800CE1504 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		93B9F9971D10ECA800CE1504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93B9F9A41D10ECC400CE1504 /* LEETheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEETheme.h; sourceTree = "<group>"; };
+		93B9F9A51D10ECC400CE1504 /* LEETheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEETheme.m; sourceTree = "<group>"; };
+		93B9F9A71D10ED0000CE1504 /* tag_blue_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tag_blue_json.json; sourceTree = "<group>"; };
+		93B9F9A81D10ED0000CE1504 /* tag_gray_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tag_gray_json.json; sourceTree = "<group>"; };
+		93B9F9A91D10ED0000CE1504 /* tag_green_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tag_green_json.json; sourceTree = "<group>"; };
+		93B9F9AA1D10ED0000CE1504 /* tag_red_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tag_red_json.json; sourceTree = "<group>"; };
+		93B9F9AF1D10F0D800CE1504 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		93B9F9B01D10F0D800CE1504 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +115,13 @@
 		93B9F96F1D10ECA800CE1504 /* 主体 */ = {
 			isa = PBXGroup;
 			children = (
+				93B9F9A31D10ECC400CE1504 /* LEETheme */,
 				93B9F9731D10ECA800CE1504 /* AppDelegate.h */,
 				93B9F9741D10ECA800CE1504 /* AppDelegate.m */,
 				93B9F9761D10ECA800CE1504 /* ViewController.h */,
 				93B9F9771D10ECA800CE1504 /* ViewController.m */,
+				93B9F9AF1D10F0D800CE1504 /* ViewController2.h */,
+				93B9F9B01D10F0D800CE1504 /* ViewController2.m */,
 				93B9F9791D10ECA800CE1504 /* Main.storyboard */,
 				93B9F97C1D10ECA800CE1504 /* Assets.xcassets */,
 				93B9F97E1D10ECA800CE1504 /* LaunchScreen.storyboard */,
@@ -117,6 +134,10 @@
 		93B9F9701D10ECA800CE1504 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93B9F9A71D10ED0000CE1504 /* tag_blue_json.json */,
+				93B9F9A81D10ED0000CE1504 /* tag_gray_json.json */,
+				93B9F9A91D10ED0000CE1504 /* tag_green_json.json */,
+				93B9F9AA1D10ED0000CE1504 /* tag_red_json.json */,
 				93B9F9711D10ECA800CE1504 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +159,15 @@
 				93B9F9971D10ECA800CE1504 /* Info.plist */,
 			);
 			path = "主体UITests";
+			sourceTree = "<group>";
+		};
+		93B9F9A31D10ECC400CE1504 /* LEETheme */ = {
+			isa = PBXGroup;
+			children = (
+				93B9F9A41D10ECC400CE1504 /* LEETheme.h */,
+				93B9F9A51D10ECC400CE1504 /* LEETheme.m */,
+			);
+			path = LEETheme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +273,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B9F9AC1D10ED0000CE1504 /* tag_gray_json.json in Resources */,
+				93B9F9AE1D10ED0000CE1504 /* tag_red_json.json in Resources */,
 				93B9F9801D10ECA800CE1504 /* LaunchScreen.storyboard in Resources */,
+				93B9F9AD1D10ED0000CE1504 /* tag_green_json.json in Resources */,
 				93B9F97D1D10ECA800CE1504 /* Assets.xcassets in Resources */,
+				93B9F9AB1D10ED0000CE1504 /* tag_blue_json.json in Resources */,
 				93B9F97B1D10ECA800CE1504 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +306,8 @@
 			files = (
 				93B9F9781D10ECA800CE1504 /* ViewController.m in Sources */,
 				93B9F9751D10ECA800CE1504 /* AppDelegate.m in Sources */,
+				93B9F9B11D10F0D800CE1504 /* ViewController2.m in Sources */,
+				93B9F9A61D10ECC400CE1504 /* LEETheme.m in Sources */,
 				93B9F9721D10ECA800CE1504 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
